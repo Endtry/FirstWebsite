@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Day 3 Challenge Horizontal Nav Bar</title>
+        <meta name="description" content="Day 3 challenge for the website for beginner course">
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            html, body {
+                height: 100%;
+                font-family: Verdana,sans-serif;
+            }
+            ul {
+                margin-block-start: 0em;
+                margin-block-end: 0em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                padding-inline-start: 0px;
+            }
+            .top-nav {
+                position: fixed;
+                width: 100%;
+                list-style-type: none;
+                background-color: #333;
+                height: 50px;
+                padding: 0px 10px 0px 0px;
+            }
+            .top-nav > li {
+                display: inline;
+                margin: 0px -3px;
+            }
+            .top-nav > li > a {
+                color: white;
+                text-decoration: none;
+                padding: 16px 10px;
+                line-height: 50px;
+            }
+            .top-nav > li:first-child a, .top-nav > li:first-child a:hover {
+                color: black;
+                background-color: #04AA6D;
+            }
+            .top-nav > li > a:hover {
+                background-color: #5d5d5d;
+                color: black;
+            }
+            .top-nav > li:last-child {
+                float: right;
+            }
+            .side-nav {
+                list-style-type: none;
+            }
+            .side-nav > li {
+                background-color: #333;
+            }
+            .side-nav > li:first-child, 
+            .side-nav > li:first-child > a:hover {
+                background-color: #04AA6D;
+            }
+            .side-nav > li:first-child > a {
+                color: black;
+            }
+            .side-nav > li > a {
+                display: block;
+                color: white;
+                padding: 20px 0px 20px 20px;
+                text-decoration: none;
+            }
+            .side-nav > li > a:hover {
+                background-color: #5d5d5d;
+            }
+            .container {
+                overflow: auto;
+                height: 100%;
+            }
+            .main {
+                margin-top: 50px;
+                height: 100%;
+            }
+            .left {
+                width: calc(30% - 40px);
+                float: left;
+                max-width: 350px;
+                height: 100%;
+                padding: 20px;
+            }
+            .left > ul:nth-child(2) {
+                margin-top: 20px;
+            }
+            .right {
+                width:calc(70% - 40px);
+                float: right;
+                height: 100%;
+                padding: 20px;
+            }
+            .footer {
+                background-color: #333;
+                color: white;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <ul class="top-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <div class="main">
+                <div class="left">
+                    <ul class="side-nav">
+                        <li><a href="#">Main</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                    <ul class="side-nav">
+                        <li><a href="#">Utility</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <h1 title="Welcome text">Welcome to my website!!</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="footer">
+                    <p title="my main footer">&copy; This is a footer<p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 6 - Position</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            .top-bar {
+                height: 70px; 
+                width: 100%;
+                background-color: green;
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0px;
+                z-index: 999;
+            }
+            .box {
+                width: 150px;
+                height: 150px;
+                background-color: #CCC;
+                margin-bottom: 10px;
+                border: 1px dashed #000;
+            }
+            .parent {
+                width: 300px;
+                height: 300px;
+                position: relative;
+            }
+            .child {
+                position: absolute;
+                top: 60px;
+                right: 60px;
+                background-color: blue;
+            }
+            .red {
+                background-color: red;
+                top:85px;
+                right: 35px;
+            }
+            .sibling {
+                width: 300px;
+                height: 300px;  
+            }
+            .sibling-2 {
+                width: 300px;
+                height: 300px;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                z-index: -1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top-bar"></div>
+        <h1>Day 6 - Position</h1>
+        <div class="parent box">
+            <div class="child box"></div>
+            <div class="child red box"></div>
+        </div>
+        <div class="sibling box"><p>Sibling 1</p></div>
+        <div class="sibling box"><p>Sibling 1</p></div>
+        <div class="sibling box"><p>Sibling 1</p></div>
+        <div class="sibling-2 box"><p>Sibling 2<p></div>
+    </body>
+</html>

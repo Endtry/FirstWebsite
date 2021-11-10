@@ -1,0 +1,169 @@
+body { 
+    background-color: grey; 
+    font-weight: normal;
+    color: #000000;
+}
+h4 {
+    color: red;
+}
+#special-h4 {
+    color: blue;
+    font-weight: normal;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #000000;
+    margin: 20px;
+    text-align: center;
+}
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.yellow {
+    background-color: yellow;
+}
+.green {
+    background-color: green;
+}
+.center {
+    margin: 0px auto;
+    width: 140px;
+}
+.horizontal {
+    width: 100%;
+    overflow: auto;
+    width: 568px;
+    margin: 0px auto;
+}
+.inline {
+    display: inline;
+    float: left;
+    text-align: center;
+}
+
+/*  Day 2 Challenge CSS */
+.list-box {
+    list-style-type: none;
+    text-align: center;
+}
+.list-box > li {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    margin: 0px 20px;
+}
+.custom-blue {
+    background-color: #3236b5;
+}
+.custom-red {
+    background-color: #e40c0c;
+}
+.custom-yellow {
+    background-color: #e5ff0c;
+}
+.custom-purple {
+    background-color: #5b08e0;
+}
+/*  End Day 2 Challenge CSS */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html, body {
+    height: 100%;
+    font-family: Verdana,sans-serif;
+}
+ul {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+.top-nav {
+    list-style-type: none;
+    background-color: #333;
+    height: 50px;
+    padding: 0px 10px 0px 0px;
+}
+.top-nav > li {
+    display: inline;
+    margin: 0px -3px;
+}
+.top-nav > li > a {
+    color: white;
+    text-decoration: none;
+    padding: 16px 10px;
+    line-height: 50px;
+}
+.top-nav > li:first-child a, .top-nav > li:first-child a:hover {
+    color: black;
+    background-color: #04AA6D;
+}
+.top-nav > li > a:hover {
+    background-color: #5d5d5d;
+    color: black;
+}
+.top-nav > li:last-child {
+    float: right;
+}
+.side-nav {
+    list-style-type: none;
+}
+.side-nav > li {
+    background-color: #333;
+}
+.side-nav > li:first-child, 
+.side-nav > li:first-child > a:hover {
+    background-color: #04AA6D;
+}
+.side-nav > li:first-child > a {
+    color: black;
+}
+.side-nav > li > a {
+    display: block;
+    color: white;
+    padding: 20px 0px 20px 20px;
+    text-decoration: none;
+}
+.side-nav > li > a:hover {
+    background-color: #5d5d5d;
+}
+.container {
+    overflow: auto;
+    height: 100%;
+}
+.left {
+    width: calc(30% - 40px);
+    float: left;
+    max-width: 350px;
+    height: 100%;
+    padding: 20px;
+}
+.left > ul:nth-child(2) {
+    margin-top: 20px;
+}
+.right {
+    width:calc(70% - 40px);
+    float: right;
+    height: 100%;
+    padding: 20px;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    clear: both;
+}
+
+
